@@ -1,0 +1,12 @@
+body{
+    background-color: wheat;
+}
+
+.container{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    border: 10px solid slategray;
+}

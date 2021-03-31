@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: fantasy;
+}
+
+nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+/*HEADER*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    /*Concepto flex*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+header nav{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+}
+
+header nav li{
+    margin: 0 20px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+    header nav{
+        margin-top: 10px;
+    }
+    header .logo img{
+        width: 80%;
+    }
+    header nav li a{
+        font-size: 15px;
+    }
+}
+
+/*BANNER*/
+
+section{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner{
+    position: relative;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    min-height: 80vh;
+}
+
+.banner .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background-image: url('../img/1042006.jpg');
+    background-size: cover;
+    z-index: -1;
+}  
+
+.banner .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background-color: black;
+    opacity: .5;
+    content: '';
+}  
+
+@media (max-width:1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width:600px){
+    section{
+        padding: 130px 30px;
+    }
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.banner h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.banner a.banner-btn{ 
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: crimson;
+    margin-bottom: 200px;
+}
+
+/*Sobre Mi*/
+
+.sobremi-contenido{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.sobremi-titulo{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+}
+ul{
+    list-style: none;
+}
+
+.sobremi-contenido li{
+    padding: 20px;
+    height: 350px;
+    background-size: cover;
+    background-clip: content-box;
+    position: center;
+}
+
+.sobremi-izq{
+    flex-basis: 40%;
+    background-image: url('../img/6657.jpg');
+}
+
+.sobremi-der{
+    flex-basis: 60%;
+}
+
+.sobremi-contenido h2{
+    margin-bottom: 2%;
+}
+
+.sobremi-contenido p{
+    margin-bottom: 35px;
+    text-align: left;
+    padding-left: 0;
+}
+.sobremi-btn{
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: crimson;
+}
+
+@media (max-width:800px){
+    .sobremi-izq, .sobremi-der{
+        flex-basis: 100%;
+    }
+
+    .sobremi-contenido p{
+        text-align: justify;
+    }
+    
+    .sobremi-contenido li{
+        padding: 10px;
+    }
+
+    .sobremi-der{
+        text-align: center;
+    }
+}
+
+/*Perritos*/
+
+#perritos{
+    background: gray;
+}
+
+.perritos-contenido{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.perritos-contenido li{
+    flex-basis: 33%;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.perritos-contenido li i{
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.perritos-contenido li h4{
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+
+.perritos-titulo{
+    margin-bottom: 4%;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width:800px){
+    .perritos-titulo{
+        font-size: 40px;
+        margin-bottom: 8%;
+    }
+
+    .perritos-contenido li{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/*Formulario*/
+
+#formulario{
+    margin: auto;
+    width: 40%;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px ;
+    padding: 12px;
+
+}
+
+input[type="text"], input[type="date"], input[type="file"], input[type="number"], input[type="password"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgb(83, 45, 2);
+    resize: vertical;
+}
+
+.btn{
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+
+.btnVerde {
+    background-color: rgb(17, 182, 58);
+
+
+}
+
+.btnVerde:hover {
+    background-color: rgb(30, 100, 12);
+}
+
+.btnRojo {
+    background-color: rgb(197, 6, 6);
+        
+}
+
+.btnRojo:hover {
+    background-color: rgb(104, 5, 5);
+}
+
+/*Contacto*/
+
+.contacto-contenido{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.contacto-titulo{
+    font-size: 50px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+
+.contacto-contenido li{
+    height: 600px;
+    padding: 20px;
+}
+
+.contacto-izq{
+    flex-basis: 50%;
+}
+
+.contacto-der{
+    flex-basis: 50%;
+    ;
+}
+
+p{
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px 0px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="navbar"> <center>
+        <a href="index.html">HOME</a>
+        <a href="datos.html">DATO</a>
+        <a href="Recibo.html">RECIBO</a>
+    </div>    
+
+
+    <!--EJEMPLO 1.1-->
+    <!--table>tr*_>td*_ (Para evitar copiar y pegar, asi puedes crear directamente el formato)-->      
+    
+    <h1 id="Titulo">Datos del perrito</h1>
+
+    <div id="formulario">
+        <form action="Recibo.html" method="POST">
+            <label for="">Nombre Perrito: </label>
+            <input type="text" name="txtNombre" id="txtNombre">
+            
+            <label for="">Nombre Dueño:</label>
+            <input type="text" name="txtDueno" id="txtDueno">
+            
+            <label for="">Fecha</label>
+            <input type="date" name="txtFecha" id="txtFecha">
+            
+            <label for="">Imagen del perrito</label>
+            <input type="file" name="txtImagen" id="txtImagen">
+            
+            <label for="">Edad</label>
+            <input type="number" name="txtEdad" id="txtEdad">
+
+            <label for="">Contraseña</label>
+            <input type="password" name="txtPass" id="txtPass">
+
+            <input type="submit" name="btnEnviar" id="btnEnviar" class="btn btnVerde">
+            <input type="reset" name="btnReset" id="btnReset"   class="btn btnRojo">
+
+            
+        </form>
+    </div>
+
+    <footer>
+        <div id="piedepagina">
+        <h2>PÁGINA CREADA POR YO 2021</h2>
+        <img src="" alt="">
+        </div>
+    </footer>
+     
+</body>
+</html>
